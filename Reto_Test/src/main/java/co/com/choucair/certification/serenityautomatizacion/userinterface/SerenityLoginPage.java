@@ -1,4 +1,4 @@
-package co.com.choucair.certification.serenity_automatizacion.userinterface;
+package co.com.choucair.certification.serenityautomatizacion.userinterface;
 
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;

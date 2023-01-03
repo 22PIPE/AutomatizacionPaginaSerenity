@@ -1,8 +1,8 @@
 package co.com.choucair.certification.serenity_automatizacion.stepdefinitions;
 
-import co.com.choucair.certification.serenity_automatizacion.questions.Answer;
-import co.com.choucair.certification.serenity_automatizacion.questions.Success;
-import co.com.choucair.certification.serenity_automatizacion.tasks.*;
+import co.com.choucair.certification.serenityautomatizacion.questions.Answer;
+import co.com.choucair.certification.serenityautomatizacion.questions.Success;
+import co.com.choucair.certification.serenityautomatizacion.tasks.*;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -59,7 +59,7 @@ public class SerenityStepDefinition {
 
     @Then("se completa la creacion de la nueva reunion {string}")
     public void seCompletaLaCreacionDeLaNuevaReunion(String organization2){
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.Register(organization2)));
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.register(organization2)));
 
     }
 

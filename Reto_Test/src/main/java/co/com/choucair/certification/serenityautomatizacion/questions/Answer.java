@@ -1,6 +1,6 @@
-package co.com.choucair.certification.serenity_automatizacion.questions;
+package co.com.choucair.certification.serenityautomatizacion.questions;
 
-import co.com.choucair.certification.serenity_automatizacion.userinterface.PaginaPrincipal;
+import co.com.choucair.certification.serenityautomatizacion.userinterface.PaginaPrincipal;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
@@ -16,7 +16,7 @@ public class Answer implements Question<Boolean> {
         this.organization2 = organization2;
     }
 
-    public static Answer Register(String organization2) {
+    public static Answer register(String organization2) {
         return new Answer(organization2);
     }
 
@@ -24,8 +24,6 @@ public class Answer implements Question<Boolean> {
     public Boolean answeredBy(Actor actor) {
         boolean result2;
         String textSuccess = Text.of(PaginaPrincipal.BUSINESS_UNIT_SUCCESS).viewedBy(actor).asString();
-        System.out.println(organization2);
-        System.out.println(textSuccess);
         result2 = organization2.equals(textSuccess);
         return result2;
 

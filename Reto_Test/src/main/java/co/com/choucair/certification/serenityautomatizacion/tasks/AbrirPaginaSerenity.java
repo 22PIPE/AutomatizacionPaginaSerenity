@@ -1,6 +1,6 @@
-package co.com.choucair.certification.serenity_automatizacion.tasks;
+package co.com.choucair.certification.serenityautomatizacion.tasks;
 
-import co.com.choucair.certification.serenity_automatizacion.userinterface.PaginaSerenity;
+import co.com.choucair.certification.serenityautomatizacion.userinterface.PaginaSerenity;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
