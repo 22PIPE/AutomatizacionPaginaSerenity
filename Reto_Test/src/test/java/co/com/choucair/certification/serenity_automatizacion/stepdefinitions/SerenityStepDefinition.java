@@ -42,7 +42,7 @@ public class SerenityStepDefinition {
 
     @Then("se completa la creacion de la nueva unidad de negocio {string}")
     public void seCompletaLaCreacionDeLaNuevaUnidadDeNegocio(String organization){
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Success.Register(organization)));
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Success.register(organization)));
 
     }
     @When("ingreso al modulo Meeting")

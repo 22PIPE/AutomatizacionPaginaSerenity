@@ -15,7 +15,7 @@ public class Success implements Question<Boolean> {
         this.organization = organization;
     }
 
-    public static Success Register(String organization) {
+    public static Success register(String organization) {
         return new Success(organization);
     }
 
@@ -24,8 +24,6 @@ public class Success implements Question<Boolean> {
     public Boolean answeredBy(Actor actor) {
         boolean result;
         String textSuccess = Text.of(PaginaPrincipal.BUSINESS_UNIT_SUCCESS).viewedBy(actor).asString();
-        System.out.println(organization);
-        System.out.println(textSuccess);
         result = organization.equals(textSuccess);
         return result;
 
