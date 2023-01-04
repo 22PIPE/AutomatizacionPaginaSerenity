@@ -35,7 +35,7 @@ public class NewReunion implements Task {
                 Enter.theValue("James Jones").into(PaginaNuevaReunion.INPUT_ORGANIZACION),
                 Hit.the(Keys.ENTER).into(PaginaNuevaReunion.INPUT_ORGANIZACION),
                 Enter.theValue("10").into(PaginaNuevaReunion.INPUT_NUMERO_REUNION),
-                Enter.theValue("01/05/2023").into(PaginaNuevaReunion.INPUT_DATE_FECHA_FINAL),
+                Enter.theValue("01/08/2023").into(PaginaNuevaReunion.INPUT_DATE_FECHA_FINAL),
                 Click.on(PaginaNuevaReunion.CLIC_RELOJ_HORA_FINAL),
                 Click.on(PaginaNuevaReunion.CONTENEDOR_RELOJ_FINAL),
                 Hit.the(Keys.ARROW_DOWN).into(PaginaNuevaReunion.CONTENEDOR_RELOJ_FINAL),
